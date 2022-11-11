@@ -1,0 +1,21 @@
+[[package]]
+name = "dpsa4fl-bindings"
+version = "0.1.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "b82f216fbbfb051364c845eb99105197e2a448f383d4469db66234a0b740ce2b"
+
+[metadata.files]
+dpsa4fl-bindings = [
+    {file = "dpsa4fl_bindings-0.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9f0a214e7201fce93440aaf7344e4fe41ddda73465506ed926f27bbe9ef12c41"},
+    {file = "dpsa4fl_bindings-0.1.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2fd36b2279f101426892b73d85e359052d334818aee0f2fafc7b159188caede7"},
+    {file = "dpsa4fl_bindings-0.1.3-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:69f703c69b7e9dda7f5c9a34dc39b5e22aa814872620541d9e15c642880924be"},
+    {file = "dpsa4fl_bindings-0.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b040c175171279a972359c4a86c1e863833c3489a6333df93acf49fa09cff6d1"},
+    {file = "dpsa4fl_bindings-0.1.3.tar.gz", hash = "sha256:160ad718defd538cc83125f011e170a944563713e76726521a58195f0102adbc"},
+]

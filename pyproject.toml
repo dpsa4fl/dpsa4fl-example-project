@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "dpsa4fl-example-project"
+version = "0.1.0"
+description = ""
+authors = ["Maxim Urschumzew <u.maxim@live.de>"]
+readme = "README.md"
+packages = [{include = "dpsa4fl_example_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+dpsa4fl-bindings = "^0.1.2"
+
+[tool.pyright]
+include = ["dpsa4fl_example_project"]
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "src/experimental",
+    "src/typestubs"
+]
+pythonVersion = "3.10"
+pythonPlatform = "Linux"
+venv = ".venv"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
