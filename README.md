@@ -1,5 +1,5 @@
 
-# dpsa4fl example project (python & flower framework)
+# dpsa4fl example project (python & flower)
 
 This is an example for how to do differentially private federated machine learning
 with the [flower](https://flower.dev/) framework, using the [dpsa4fl](https://github.com/dpsa-project/dpsa4fl)
