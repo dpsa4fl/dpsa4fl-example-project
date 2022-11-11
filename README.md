@@ -11,11 +11,11 @@ This is a python project that uses the [poetry](https://python-poetry.org/) pack
 that you need to have `poetry` installed on your machine.
 
 To start developing, you need to enable a virtual environment. This can be done easily with poetry:
-```
+```fish
 path/dpsa4fl-example-project> poetry shell
 ```
 Now all dependencies (including `dpsa4fl-bindings`) can be installed by simply saying
-```
+```fish
 (dpsa4fl-example-project-py3.10) path/dpsa4fl-example-project> poetry install
 ```
 
