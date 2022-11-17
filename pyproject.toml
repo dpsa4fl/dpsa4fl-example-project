@@ -9,6 +9,11 @@ packages = [{include = "dpsa4fl_example_project"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 dpsa4fl-bindings = "^0.1.2"
+# dependencies from flower/pythorch quickstart
+flwr = { git = "https://github.com/dpsa-project/flower", branch = "dpsa-prototype" }
+torch = "^1.12.0"
+torchvision = "^0.13.0"
+tqdm = "^4.63.0"
 
 [tool.pyright]
 include = ["dpsa4fl_example_project"]
