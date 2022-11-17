@@ -105,5 +105,5 @@ class FlowerClient(fl.client.NumPyClient):
 # Start Flower client
 fl.client.start_numpy_client(
     server_address="127.0.0.1:8080",
-    client=FlowerClient(),
+    client=fl.client.DPSANumPyClient(FlowerClient()),
 )
