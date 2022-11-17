@@ -19,4 +19,7 @@ Now all dependencies (including `dpsa4fl-bindings`) can be installed by simply s
 (dpsa4fl-example-project-py3.10) path/dpsa4fl-example-project> poetry install
 ```
 
+## Python package management tips
+1. If poetry hangs, then maybe [this](https://github.com/python-poetry/poetry/issues/6906#issuecomment-1298972506) will help.
+
 
