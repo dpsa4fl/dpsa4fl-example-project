@@ -92,6 +92,10 @@ class FlowerClient(fl.client.NumPyClient):
         net.load_state_dict(state_dict, strict=True)
 
     def fit(self, parameters, config):
+        # print the task_id
+        task_id = config['task_id']
+        print(f"My task_id is: {task_id=}")
+
         self.set_parameters(parameters)
         train(net, trainloader, epochs=1)
         return self.get_parameters(config={}), len(trainloader.dataset), {}
@@ -104,6 +108,6 @@ class FlowerClient(fl.client.NumPyClient):
 
 # Start Flower client
 fl.client.start_numpy_client(
-    server_address="127.0.0.1:8080",
+    server_address="127.0.0.1:8081",
     client=fl.client.DPSANumPyClient(FlowerClient()),
 )
