@@ -21,7 +21,7 @@ dpsa4fl_state = controller_api__new_state(20)
 
 # Define strategy
 strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average)
-dpsa4fl_strategy = fl.server.strategy.DPSAStrategyWrapper(strategy, dpsa4fl_state)
+dpsa4fl_strategy = fl.server.strategy.DPSAStrategyWrapper(strategy, dpsa4fl_state, 62006)
 
 client_manager = fl.server.SimpleClientManager()
 
