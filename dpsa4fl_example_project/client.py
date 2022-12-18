@@ -10,6 +10,8 @@ from torchvision.datasets import CIFAR10
 from torchvision.transforms import Compose, Normalize, ToTensor
 from tqdm import tqdm
 
+from dpsa4fl_bindings import client_api__new_state, client_api__submit
+
 
 # #############################################################################
 # 1. Regular PyTorch pipeline: nn.Module, train, test, and DataLoader
@@ -105,9 +107,10 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
+dpsa4fl_client_state = client_api__new_state(20)
 
 # Start Flower client
 fl.client.start_numpy_client(
     server_address="127.0.0.1:8081",
-    client=fl.client.DPSANumPyClient(FlowerClient()),
+    client=fl.client.DPSANumPyClient(dpsa4fl_client_state, FlowerClient()),
 )
