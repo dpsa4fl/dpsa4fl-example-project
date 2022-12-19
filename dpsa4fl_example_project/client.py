@@ -107,7 +107,7 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-dpsa4fl_client_state = client_api__new_state(20)
+dpsa4fl_client_state = client_api__new_state(62006)
 
 # Start Flower client
 fl.client.start_numpy_client(
