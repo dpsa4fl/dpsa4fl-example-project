@@ -26,16 +26,10 @@ dpsa4fl_strategy = fl.server.strategy.DPSAStrategyWrapper(strategy, dpsa4fl_stat
 client_manager = fl.server.SimpleClientManager()
 
 # Start Flower server
-# fl.server.start_server(
-#     server=fl.server.DPSAServer(dpsa4fl_state, client_manager=client_manager, strategy=dpsa4fl_strategy),
-#     server_address="0.0.0.0:8081",
-#     config=fl.server.ServerConfig(num_rounds=10),
-#     strategy=dpsa4fl_strategy,
-# )
-
 fl.server.start_server(
-    server=fl.server.Server(client_manager=client_manager, strategy=strategy),
+    server=fl.server.DPSAServer(dpsa4fl_state, client_manager=client_manager, strategy=dpsa4fl_strategy),
     server_address="0.0.0.0:8081",
     config=fl.server.ServerConfig(num_rounds=10),
-    strategy=strategy,
+    strategy=dpsa4fl_strategy,
 )
+

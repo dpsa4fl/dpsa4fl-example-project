@@ -218,6 +218,5 @@ dpsa4fl_client_state = client_api__new_state(62006)
 # Start Flower client
 fl.client.start_numpy_client(
     server_address="127.0.0.1:8081",
-    # client=fl.client.DPSANumPyClient(dpsa4fl_client_state, FlowerClient()),
-    client=FlowerClient(),
+    client=fl.client.DPSANumPyClient(dpsa4fl_client_state, FlowerClient()),
 )
