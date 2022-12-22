@@ -56,7 +56,7 @@ simulation = ["ray[default] (>=2.0.0,<2.1.0)"]
 type = "git"
 url = "https://github.com/dpsa-project/flower"
 reference = "dpsa-prototype"
-resolved_reference = "92f73663d5ef51be6f51433741e15feb8aca971c"
+resolved_reference = "67113553ddc2c9a13bf8699fb22ed67bd6cea317"
 
 [[package]]
 name = "grpcio"

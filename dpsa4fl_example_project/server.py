@@ -21,14 +21,21 @@ dpsa4fl_state = controller_api__new_state(62006)
 
 # Define strategy
 strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average)
-dpsa4fl_strategy = fl.server.strategy.DPSAStrategyWrapper(strategy, dpsa4fl_state, 62006)
+dpsa4fl_strategy = fl.server.strategy.DPSAStrategyWrapper(strategy, dpsa4fl_state, 62006, fit_metrics_aggregation_fn=None)
 
 client_manager = fl.server.SimpleClientManager()
 
 # Start Flower server
+# fl.server.start_server(
+#     server=fl.server.DPSAServer(dpsa4fl_state, client_manager=client_manager, strategy=dpsa4fl_strategy),
+#     server_address="0.0.0.0:8081",
+#     config=fl.server.ServerConfig(num_rounds=10),
+#     strategy=dpsa4fl_strategy,
+# )
+
 fl.server.start_server(
-    server=fl.server.DPSAServer(dpsa4fl_state, client_manager=client_manager, strategy=dpsa4fl_strategy),
+    server=fl.server.Server(client_manager=client_manager, strategy=strategy),
     server_address="0.0.0.0:8081",
-    config=fl.server.ServerConfig(num_rounds=3),
-    strategy=dpsa4fl_strategy,
+    config=fl.server.ServerConfig(num_rounds=10),
+    strategy=strategy,
 )
