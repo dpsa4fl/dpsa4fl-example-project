@@ -29,7 +29,7 @@ client_manager = fl.server.SimpleClientManager()
 fl.server.start_server(
     server=fl.server.DPSAServer(dpsa4fl_state, client_manager=client_manager, strategy=dpsa4fl_strategy),
     server_address="0.0.0.0:8081",
-    config=fl.server.ServerConfig(num_rounds=10),
+    config=fl.server.ServerConfig(num_rounds=7),
     strategy=dpsa4fl_strategy,
 )
 
