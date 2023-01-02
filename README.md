@@ -31,7 +31,7 @@ Switch into that directory and into the `run` subfolder.
 ```
 Start the containers with docker-compose.
 ```fish
-~/dpsa4fl-testing-infrastructure/build> docker-compose up -d
+~/dpsa4fl-testing-infrastructure/run> docker-compose up -d
 ```
 
 ### 3. Get and prepare this example project
