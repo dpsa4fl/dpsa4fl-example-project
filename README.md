@@ -14,7 +14,8 @@ from flower (learning the CIFAR-10 dataset), but is adapted to use our [flower f
 Running this project consists of four steps:
 
 ### 1. Installing dependencies
-You need to have the [poetry](https://python-poetry.org/) package manager and [docker](https://www.docker.com/)
+This project requires python version 3.9 or higher.
+You also need to have the [poetry](https://python-poetry.org/) package manager and [docker](https://www.docker.com/)
 (with [docker-compose](https://docs.docker.com/compose/)) installed on your system. See the links for appropriate installation instructions
 for your system.
 
