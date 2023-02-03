@@ -8,7 +8,7 @@ packages = [{include = "dpsa4fl_example_project"}]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-dpsa4fl-bindings = "^0.1.2"
+dpsa4fl-bindings = "0.1.43"
 # dependencies from flower/pythorch quickstart
 flwr = { git = "https://github.com/dpsa-project/flower", branch = "dpsa-prototype" }
 torch = "^1.12.0"
