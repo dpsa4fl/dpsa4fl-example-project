@@ -24,7 +24,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7
 
 [[package]]
 name = "dpsa4fl-bindings"
-version = "0.1.43"
+version = "0.1.45"
 description = ""
 category = "main"
 optional = false
@@ -228,7 +228,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "3db9de4904bd7a7848ed83adcdf8c6968bfb42f545dda6f6b3058af7d4aa7b42"
+content-hash = "a2df714999a4a533fb2be067cebb2732976d550a7306785f4bf85207da4c5d14"
 
 [metadata.files]
 certifi = [
@@ -330,11 +330,11 @@ colorama = [
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
 dpsa4fl-bindings = [
-    {file = "dpsa4fl_bindings-0.1.43-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4d594f9f321d6f88c68a5e4c9d5d4961f0561d1120dd52de6ab5ab97610338b0"},
-    {file = "dpsa4fl_bindings-0.1.43-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c2273a86ffb09ea026eb3a8ad6ecaa6adc1c440ef9285dc3b88ddf60ec36cf36"},
-    {file = "dpsa4fl_bindings-0.1.43-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:6eb7bd6c2f626114a7b0b06ce4d395a3cecdac3dcc38e86dee3c180a131e4bb5"},
-    {file = "dpsa4fl_bindings-0.1.43-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:38803f4139413fa46c33ef96b337f1f0aa8fcf00875cb6e087cd451742dbbf36"},
-    {file = "dpsa4fl_bindings-0.1.43.tar.gz", hash = "sha256:9e8863f9acfe7a11843f4a89a9fd17dd85b19313951a83ab108d2fa5b256c1e4"},
+    {file = "dpsa4fl_bindings-0.1.45-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8a250a74c550890c8f54c01c071b71509a6966e4cb8b7180e25edace3f0d6a2e"},
+    {file = "dpsa4fl_bindings-0.1.45-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:187b92d77522c4ebf31bb316bf90c304ad056990ea59baa0b23bd5bd131b1ecb"},
+    {file = "dpsa4fl_bindings-0.1.45-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8fe13e33573e5b97fbb6902ddf7062e20cf00180d2d3583be2156399e36f8756"},
+    {file = "dpsa4fl_bindings-0.1.45-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b90d4b18b332df796b3dfa43cdfc812f5e7e935534939256ec652ea7827ef43a"},
+    {file = "dpsa4fl_bindings-0.1.45.tar.gz", hash = "sha256:4d8940695d49fdbbbd3a60c939781d7eed64cced3a63c064cd7ea0d151c36230"},
 ]
 flwr = []
 grpcio = [
