@@ -17,7 +17,7 @@ def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
     return {"accuracy": sum(accuracies) / sum(examples)}
 
 # create controller state
-dpsa4fl_state = controller_api__new_state(62006, 1.0)
+dpsa4fl_state = controller_api__new_state(62006, 1.0, 32, "http://127.0.0.1:9991", "http://127.0.0.1:9981", "http://127.0.0.1:9992", "http://127.0.0.1:9982")
 
 # Define strategy
 strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average)

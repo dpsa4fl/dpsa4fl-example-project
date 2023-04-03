@@ -99,7 +99,7 @@ class FlowerClient(fl.client.NumPyClient):
 
     def fit(self, parameters, config):
         self.set_parameters(parameters)
-        train(net, trainloader, epochs=3)
+        train(net, trainloader, epochs=1)
 
         params = self.get_parameters(config={})
 
@@ -110,7 +110,7 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-dpsa4fl_client_state = client_api__new_state(62006, 1.0) # hard coded number of parameters
+dpsa4fl_client_state = client_api__new_state("http://127.0.0.1:9991", "http://127.0.0.1:9981", "http://127.0.0.1:9992", "http://127.0.0.1:9982")
 
 # Start Flower client
 fl.client.start_numpy_client(
