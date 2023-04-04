@@ -24,7 +24,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7
 
 [[package]]
 name = "dpsa4fl-bindings"
-version = "0.1.47"
+version = "0.1.48"
 description = ""
 category = "main"
 optional = false
@@ -317,11 +317,11 @@ colorama = [
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
 ]
 dpsa4fl-bindings = [
-    {file = "dpsa4fl_bindings-0.1.47-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f8b31187c58dee2e7d445fa8579a98d9d53769f0c26417fa2b46abd7db6a9a0b"},
-    {file = "dpsa4fl_bindings-0.1.47-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:342453c153e52eb344b327bbd3692da0e72b629bfb8cebe288fdcaece6f1aebd"},
-    {file = "dpsa4fl_bindings-0.1.47-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e2af895030b4ed7d1cd45ce0daba4c369622bbb7f4f52e92624e2e7c54179761"},
-    {file = "dpsa4fl_bindings-0.1.47-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:93c8a3111aba7d06fa6191a2d95c99aa385f5e69c1d5b976c7c91f97cce0af36"},
-    {file = "dpsa4fl_bindings-0.1.47.tar.gz", hash = "sha256:49597dc2887e954527a6aa336a050f0df6eca1af5cc923fecaf6f980d0734599"},
+    {file = "dpsa4fl_bindings-0.1.48-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:e3c1f97e5f6f462d44743f25a7243da721cb78564eb18714a99592b1902a5050"},
+    {file = "dpsa4fl_bindings-0.1.48-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:249c916096be8768c2473573b0ef46062c5c867892ae094a612f01dba16f2e71"},
+    {file = "dpsa4fl_bindings-0.1.48-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8c9d6bd292ec9f2deda79e28eeac0c99a856e3b253e775b7224ef144717ee7f6"},
+    {file = "dpsa4fl_bindings-0.1.48-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f9c1d6c4e2e04850fe5892148ae8f82b5dcaadd3029698baab38b59b7ca82502"},
+    {file = "dpsa4fl_bindings-0.1.48.tar.gz", hash = "sha256:9caf2bb4676a9702ae1b07432d1698e4976ebb94c6362dbe772c03be17c6c542"},
 ]
 flwr = []
 grpcio = [
