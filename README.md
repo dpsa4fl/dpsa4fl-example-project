@@ -8,7 +8,7 @@ library to interact with aggregation servers as described by this [internet draf
 The project itself is based on the [pytorch quickstart example](https://github.com/adap/flower/tree/main/examples/quickstart_pytorch)
 from flower (learning the CIFAR-10 dataset), but is adapted to use our [flower fork](https://github.com/dpsa-project/flower).
 
-**Note: The dpsa project is a work in progress. This esample project exists for testing urposes, the code should not be used in production.**
+**Note: The dpsa project is a work in progress. This example project exists for testing purposes, the code should not be used in production.**
 
 ## First time setup
 Running this project consists of four steps:
@@ -23,7 +23,7 @@ This project requires the following:
 ### 2. Setting up a local janus instance
 
 Clone the [dpsa4fl-testing-infrastructure](https://github.com/dpsa-project/dpsa4fl-testing-infrastructure)
-repository into a directory of your choice (here `~`). Make sure to clone the submodules as well.
+repository into a directory of your choice (here `.`). Make sure to clone the submodules as well, e.g. using the `--recursive` flag.
 ```fish
 ~> git clone --recursive https://github.com/dpsa-project/dpsa4fl-testing-infrastructure
 ```
@@ -38,7 +38,7 @@ Start the containers with docker-compose.
 
 ### 3. Get and prepare this example project
 
-Clone this repo into a directory of your choice (here again `~`).
+Clone this repo into a directory of your choice (here again `.`).
 ```fish
 ~> git clone https://github.com/dpsa-project/dpsa4fl-example-project
 ```
