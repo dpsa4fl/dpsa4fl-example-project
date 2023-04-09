@@ -8,27 +8,28 @@ library to interact with aggregation servers as described by this [internet draf
 The project itself is based on the [pytorch quickstart example](https://github.com/adap/flower/tree/main/examples/quickstart_pytorch)
 from flower (learning the CIFAR-10 dataset), but is adapted to use our [flower fork](https://github.com/dpsa-project/flower).
 
-**Note: Currently no differential privacy is employed. Only secure aggregation via janus.**
+**Note: The dpsa project is a work in progress. This esample project exists for testing urposes, the code should not be used in production.**
 
 ## First time setup
 Running this project consists of four steps:
 
 ### 1. Installing dependencies
-This project requires python version 3.9 or higher.
-You also need to have the [poetry](https://python-poetry.org/) package manager and [docker](https://www.docker.com/)
-(with [docker-compose](https://docs.docker.com/compose/)) installed on your system. See the links for appropriate installation instructions
-for your system.
+This project requires the following:
+- python version 3.9 or higher.
+- [poetry](https://python-poetry.org/) package manager for python
+- [docker](https://www.docker.com/)
+- [docker-compose](https://docs.docker.com/compose/)
 
 ### 2. Setting up a local janus instance
 
 Clone the [dpsa4fl-testing-infrastructure](https://github.com/dpsa-project/dpsa4fl-testing-infrastructure)
-repository into a directory of your choice (here `~`).
+repository into a directory of your choice (here `~`). Make sure to clone the submodules as well.
 ```fish
-~> git clone https://github.com/dpsa-project/dpsa4fl-testing-infrastructure
+~> git clone --recursive https://github.com/dpsa-project/dpsa4fl-testing-infrastructure
 ```
-Switch into that directory and into the `run` subfolder.
+Switch into that directory and into the `run2` subfolder.
 ```fish
-~> cd dpsa4fl-testing-infrastructure/run
+~> cd dpsa4fl-testing-infrastructure/run2
 ```
 Start the containers with docker-compose.
 ```fish
