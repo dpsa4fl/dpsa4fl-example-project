@@ -13,7 +13,7 @@ from tqdm import tqdm
 from flwr.common.typing import Config, NDArrays, NDArray, Scalar
 import numpy as np
 
-from dpsa4fl_bindings import client_api__new_state, client_api__submit
+from dpsa4fl_bindings import client_api_new_state, client_api_submit
 
 
 # #############################################################################
@@ -110,7 +110,7 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-dpsa4fl_client_state = client_api__new_state("http://127.0.0.1:9991", "http://127.0.0.1:9981", "http://127.0.0.1:9992", "http://127.0.0.1:9982")
+dpsa4fl_client_state = client_api_new_state("http://127.0.0.1:9991", "http://127.0.0.1:9981", "http://127.0.0.1:9992", "http://127.0.0.1:9982")
 
 # Start Flower client
 fl.client.start_numpy_client(
