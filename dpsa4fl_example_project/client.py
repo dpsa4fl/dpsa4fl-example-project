@@ -13,8 +13,6 @@ from tqdm import tqdm
 from flwr.common.typing import Config, NDArrays, NDArray, Scalar
 import numpy as np
 
-from dpsa4fl_bindings import client_api_new_state, client_api_submit
-
 
 # #############################################################################
 # 1. Regular PyTorch pipeline: nn.Module, train, test, and DataLoader
@@ -110,10 +108,14 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-dpsa4fl_client_state = client_api_new_state("http://127.0.0.1:9991", "http://127.0.0.1:9981", "http://127.0.0.1:9992", "http://127.0.0.1:9982")
-
 # Start Flower client
 fl.client.start_numpy_client(
     server_address="127.0.0.1:8081",
-    client=fl.client.DPSANumPyClient(dpsa4fl_client_state, FlowerClient()),
+    client=fl.client.DPSANumPyClient(
+        "http://127.0.0.1:9991",
+        "http://127.0.0.1:9981",
+        "http://127.0.0.1:9992",
+        "http://127.0.0.1:9982",
+        FlowerClient()
+    ),
 )
