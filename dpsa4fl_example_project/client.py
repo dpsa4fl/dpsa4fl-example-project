@@ -112,9 +112,7 @@ class FlowerClient(fl.client.NumPyClient):
 fl.client.start_numpy_client(
     server_address="127.0.0.1:8081",
     client=fl.client.DPSANumPyClient(
-        "http://127.0.0.1:9991",
         "http://127.0.0.1:9981",
-        "http://127.0.0.1:9992",
         "http://127.0.0.1:9982",
         FlowerClient()
     ),
