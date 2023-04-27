@@ -1,6 +1,7 @@
 from typing import List, Tuple
 
 import flwr as fl
+import dpsa_flower
 from flwr.common import Metrics
 from flwr.server import client_manager
 
@@ -21,9 +22,9 @@ client_manager = fl.server.SimpleClientManager()
 
 # Start Flower server
 fl.server.start_server(
-    server=fl.server.DPSAServer(
+    server=dpsa_flower.DPSAServer(
         62006,
-        100,
+        30,
         32,
         "http://127.0.0.1:9981",
         "http://127.0.0.1:9982",

@@ -2,6 +2,7 @@ import warnings
 from collections import OrderedDict
 
 import flwr as fl
+import dpsa_flower
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -108,12 +109,15 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-# Start Flower client
-fl.client.start_numpy_client(
-    server_address="127.0.0.1:8081",
-    client=fl.client.DPSANumPyClient(
-        "http://127.0.0.1:9981",
-        "http://127.0.0.1:9982",
-        FlowerClient()
-    ),
+client=dpsa_flower.DPSANumPyClient(
+    30,
+    "http://127.0.0.1:9981",
+    "http://127.0.0.1:9982",
+    FlowerClient()
 )
+
+# Start Flower client
+fl.client.start_numpy_client(server_address="127.0.0.1:8081", client=client)
+
+print("training completed, spent privacy is " + str(client.privacy_spent))
+print("client evaluation result: " + str(client.client.evaluate(client.get_parameters({}), {})))
