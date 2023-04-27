@@ -6,7 +6,7 @@ with the [flower](https://flower.dev/) framework, using the [dpsa4fl](https://gi
 library to interact with aggregation servers as described by this [internet draft](https://github.com/ietf-wg-ppm/draft-ietf-ppm-dap).
 
 The project itself is based on the [pytorch quickstart example](https://github.com/adap/flower/tree/main/examples/quickstart_pytorch)
-from flower (learning the CIFAR-10 dataset), but is adapted to use our [flower fork](https://github.com/dpsa-project/flower).
+from flower (learning the CIFAR-10 dataset), but is adapted to use our [dpsa-flower package](https://github.com/dpsa-project/dpsa-flower).
 
 **Note: The dpsa project is a work in progress. This example project exists for testing purposes, the code should not be used in production.**
 
