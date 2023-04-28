@@ -2,7 +2,7 @@ import warnings
 from collections import OrderedDict
 
 import flwr as fl
-import dpsa_flower
+import dpsa4flower
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -109,7 +109,7 @@ class FlowerClient(fl.client.NumPyClient):
         loss, accuracy = test(net, testloader)
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
-client=dpsa_flower.DPSANumPyClient(
+client=dpsa4flower.DPSANumPyClient(
     30,
     "http://127.0.0.1:9981",
     "http://127.0.0.1:9982",

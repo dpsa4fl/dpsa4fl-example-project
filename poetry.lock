@@ -110,7 +110,22 @@ files = [
 ]
 
 [[package]]
-name = "dpsa-flower"
+name = "dpsa4fl-bindings"
+version = "0.1.58"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "dpsa4fl_bindings-0.1.58-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:164654683282ffa3245b5a424bf84e58b9747aec8852bf62b96ec002306ea027"},
+    {file = "dpsa4fl_bindings-0.1.58-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c2306eae075e95b4f08b374a8e86fe9103d492a894f1a25255140c6ae7ea309b"},
+    {file = "dpsa4fl_bindings-0.1.58-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:08bacb0703bacc35462bcf9f312b298e71f38d62254496beb6812237ab8b4346"},
+    {file = "dpsa4fl_bindings-0.1.58-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:329ed9dcb26f1253576ca4a361dbb49ed1e7832782d8efaeb42a7cd6dc88a7ba"},
+    {file = "dpsa4fl_bindings-0.1.58.tar.gz", hash = "sha256:e506a99f4bb31663b3cab978c829525656cbdf350da73b9f14d007eaaf0577d4"},
+]
+
+[[package]]
+name = "dpsa4flower"
 version = "0.1.0"
 description = "A server and client to use the flower framework with DPSA."
 category = "main"
@@ -126,24 +141,9 @@ numpy = "^1.24.3"
 
 [package.source]
 type = "git"
-url = "https://github.com/dpsa-project/dpsa-flower"
+url = "https://github.com/dpsa-project/dpsa4flower"
 reference = "HEAD"
-resolved_reference = "3f1becb09bb79dfe26f9ee959114cf6c36a31dbb"
-
-[[package]]
-name = "dpsa4fl-bindings"
-version = "0.1.58"
-description = ""
-category = "main"
-optional = false
-python-versions = ">=3.7"
-files = [
-    {file = "dpsa4fl_bindings-0.1.58-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:164654683282ffa3245b5a424bf84e58b9747aec8852bf62b96ec002306ea027"},
-    {file = "dpsa4fl_bindings-0.1.58-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c2306eae075e95b4f08b374a8e86fe9103d492a894f1a25255140c6ae7ea309b"},
-    {file = "dpsa4fl_bindings-0.1.58-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:08bacb0703bacc35462bcf9f312b298e71f38d62254496beb6812237ab8b4346"},
-    {file = "dpsa4fl_bindings-0.1.58-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:329ed9dcb26f1253576ca4a361dbb49ed1e7832782d8efaeb42a7cd6dc88a7ba"},
-    {file = "dpsa4fl_bindings-0.1.58.tar.gz", hash = "sha256:e506a99f4bb31663b3cab978c829525656cbdf350da73b9f14d007eaaf0577d4"},
-]
+resolved_reference = "9b776703e6e39bef5405886ebf121f7fb991962c"
 
 [[package]]
 name = "flwr"
@@ -546,4 +546,4 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "34939ec44edd7eabf4caf067b6a268077e8fb030d4c028d3dd00a4b81029c225"
+content-hash = "c272a0a4907634f4adf93767323e897c148bfb20354a3f776ab83d9d12f3ad89"
