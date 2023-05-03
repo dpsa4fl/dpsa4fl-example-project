@@ -110,10 +110,10 @@ class FlowerClient(fl.client.NumPyClient):
         return loss, len(testloader.dataset), {"accuracy": accuracy}
 
 client=dpsa4flower.DPSANumPyClient(
-    30,
-    "http://127.0.0.1:9981",
-    "http://127.0.0.1:9982",
-    FlowerClient()
+    max_privacy_per_round = 30000,
+    aggregator1_location = "http://127.0.0.1:9981",
+    aggregator2_location = "http://127.0.0.1:9982",
+    client = FlowerClient()
 )
 
 # Start Flower client

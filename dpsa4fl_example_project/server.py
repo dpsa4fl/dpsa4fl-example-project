@@ -23,11 +23,11 @@ client_manager = fl.server.SimpleClientManager()
 # Start Flower server
 fl.server.start_server(
     server=dpsa4flower.DPSAServer(
-        62006,
-        30,
-        32,
-        "http://127.0.0.1:9981",
-        "http://127.0.0.1:9982",
+        model_size = 62006,
+        privacy_parameter = 30,
+        granularity = 32,
+        aggregator1_location = "http://127.0.0.1:9981",
+        aggregator2_location = "http://127.0.0.1:9982",
         client_manager=client_manager,
         strategy=strategy),
     server_address="0.0.0.0:8081",
