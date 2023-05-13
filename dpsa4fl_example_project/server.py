@@ -18,8 +18,8 @@ def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
 # Define strategy
 strategy = fl.server.strategy.FedAvg(
     evaluate_metrics_aggregation_fn=weighted_average,
-    min_available_clients=3,
-    min_fit_clients=3
+    min_available_clients=2,
+    min_fit_clients=2
 )
 
 client_manager = fl.server.SimpleClientManager()
