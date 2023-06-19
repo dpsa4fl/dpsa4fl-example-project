@@ -1,7 +1,7 @@
 
 # dpsa4fl example project (using dpsa4fl in flower)
 
-This is an example for how to do differentially private federated machine learning
+This is an example for how to do differentially private federated machine learning with secure aggregation
 with the [flower](https://flower.dev/) framework, using the [dpsa4fl](https://github.com/dpsa-project/dpsa4fl)
 library to interact with aggregation servers as described by this [internet draft](https://github.com/ietf-wg-ppm/draft-ietf-ppm-dap).
 
