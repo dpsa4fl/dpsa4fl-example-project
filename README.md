@@ -2,11 +2,11 @@
 # dpsa4fl example project (using dpsa4fl in flower)
 
 This is an example for how to do differentially private federated machine learning with secure aggregation
-with the [flower](https://flower.dev/) framework, using the [dpsa4fl](https://github.com/dpsa-project/dpsa4fl)
+with the [flower](https://flower.dev/) framework, using the [dpsa4fl](https://github.com/dpsa4fl/dpsa4fl)
 library to interact with aggregation servers as described by this [internet draft](https://github.com/ietf-wg-ppm/draft-ietf-ppm-dap).
 
 The project itself is based on the [pytorch quickstart example](https://github.com/adap/flower/tree/main/examples/quickstart_pytorch)
-from flower (learning the CIFAR-10 dataset), but is adapted to use our [dpsa4flower package](https://github.com/dpsa-project/dpsa4flower).
+from flower (learning the CIFAR-10 dataset), but is adapted to use our [dpsa4flower package](https://github.com/dpsa4fl/dpsa4flower).
 
 **Note: The dpsa project is a work in progress. This example project exists for testing purposes, the code should not be used in production.**
 
@@ -22,25 +22,26 @@ This project requires the following:
 
 ### 2. Setting up a local janus instance
 
-Clone the [dpsa4fl-testing-infrastructure](https://github.com/dpsa-project/dpsa4fl-testing-infrastructure)
+Clone the [dpsa4fl-testing-infrastructure](https://github.com/dpsa4fl/dpsa4fl-infrastructure)
 repository into a directory of your choice (here `.`). Make sure to clone the submodules as well, e.g. using the `--recursive` flag.
 ```fish
-~> git clone --recursive https://github.com/dpsa-project/dpsa4fl-testing-infrastructure
+~> git clone --recursive https://github.com/dpsa4fl/dpsa4fl-infrastructure
 ```
-Switch into that directory and into the `run2` subfolder.
+Switch into that directory and into the `local-docker-setup` subfolder.
 ```fish
-~> cd dpsa4fl-testing-infrastructure/run2
+~> cd dpsa4fl-testing-infrastructure/local-docker-setup
 ```
 Start the containers with docker-compose.
 ```fish
-~/dpsa4fl-testing-infrastructure/run> docker-compose up -d
+~/dpsa4fl-testing-infrastructure/local-docker-setup> docker-compose up -d
 ```
+For instructions on how to run it on actual servers instead of local docker containers, see the [corresponding readme of the infrastructore repo](https://github.com/dpsa4fl/dpsa4fl-infrastructure/tree/main/deployment-setup)
 
 ### 3. Get and prepare this example project
 
 Clone this repo into a directory of your choice (here again `.`).
 ```fish
-~> git clone https://github.com/dpsa-project/dpsa4fl-example-project
+~> git clone https://github.com/dpsa4fl/dpsa4fl-example-project
 ```
 Switch into this directory.
 ```fish
