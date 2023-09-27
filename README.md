@@ -31,6 +31,10 @@ Switch into that directory and into the `local-docker-setup` subfolder.
 ```fish
 ~> cd dpsa4fl-testing-infrastructure/local-docker-setup
 ```
+Build the required images with docker by using our build script.
+```fish
+~/dpsa4fl-testing-infrastructure/local-docker-setup> ./build.sh
+```
 Start the containers with docker-compose.
 ```fish
 ~/dpsa4fl-testing-infrastructure/local-docker-setup> docker-compose up -d
