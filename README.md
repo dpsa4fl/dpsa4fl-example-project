@@ -86,3 +86,10 @@ INFO flower 2022-12-28 12:24:36,360 | app.py:192 | app_fit: losses_distributed [
 INFO flower 2022-12-28 12:24:36,360 | app.py:193 | app_fit: metrics_distributed {'accuracy': [(1, 0.3825), (2, 0.4958), (3, 0.5599), (4, 0.5891), (5, 0.6189), (6, 0.6333), (7, 0.6403)]}
 ```
 After the seventh round, the accuracy is at 64%, which is comparable to the accuracy of the original flower example without secure aggregation.
+
+## Funding
+
+This project is funded through the [NGI Assure Fund](https://nlnet.nl/assure), a fund established by [NLnet](https://nlnet.nl) with financial support from the European Commission's [Next Generation Internet](https://ngi.eu) program. Learn more on the [NLnet project page](https://nlnet.nl/project/dist-mech-learn#ack).
+
+[<img src="https://nlnet.nl/logo/banner.png" alt="NLnet foundation logo" width="20%" />](https://nlnet.nl)
+[<img src="https://nlnet.nl/image/logos/NGIAssure_tag.svg" alt="NGI Assure Logo" width="20%" />](https://nlnet.nl/assure)
